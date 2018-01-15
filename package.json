@@ -5,7 +5,7 @@
   "main": "index.js",
   "stability": "unstable",
   "scripts": {
-    "start": "node --nouse-idle-notification server.js",
+    "start": "NODE_PORT=$PORT node --nouse-idle-notification server.js",
     "test": "node test/all.js | tap-spec",
     "gendocs": "gendocs > README.md"
   },
